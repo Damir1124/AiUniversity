@@ -1,0 +1,23 @@
+# Common
+*.log
+.DS_Store
+Thumbs.db
+
+# Vault / Obsidian (локальные настройки не коммитим)
+.obsidian/
+.obsidian/** 
+
+# Источники/большие файлы — по желанию исключить
+# raw/binaries/**
+# *.dat
+# *.exe
+# *.dll
+
+# dsh
+.dsh/
+
+# Большие PDF-исходники (обрабатываются локально, НЕ грузятся на GitHub >100MB limit)
+raw/*.PDF
+raw/*.pdf
+raw/**/*.pdf
+raw/**/*.PDF

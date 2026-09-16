@@ -1,0 +1,35 @@
+# =====================================================================
+# properties.schema.yaml — Схема YAML (frontmatter) для заметок Obsidian
+# Обновляется автоматически при обработке. Поля с '#' — обязательные.
+# =====================================================================
+
+# Обязательные свойства для ВСЕХ обработанных заметок
+common:
+  id: "string"                 # уникальный идентификатор (UUID)
+  title: "string"              # заголовок заметки
+  type: "string"               # knowledge | exam | term | cheatsheet | plain
+  mode: "string"               # dry | exam | plain | links
+  status: "string"             # draft | in_progress | done
+  created: "datetime"          # дата создания
+  source:
+    path: "string"            # относительный путь исходника в raw/
+    file: "string"            # имя файла исходника
+    sha: "string"             # хеш исходника (для отслеживания изменений)
+
+# Специфические свойства в зависимости от режима
+metadata_by_mode:
+  dry:
+    subjects: ["string"]      # теги предметов, например ["Математика","Анализ"]
+    key_concepts: ["string"]  # ключевые понятия, связаны [[термин]]
+    formulas: ["string"]      # ключевые формулы
+    links: ["string"]         # связи с другими заметками [[...]]
+  exam:
+    questions: "integer"      # количество вопросов
+    cheatsheet: "boolean"     # есть ли шпаргалка
+    subjects: ["string"]
+  plain:
+    subjects: ["string"]
+    analogies: "boolean"      # использовались ли аналогии
+  links:
+    terms: ["string"]         # извлечённые термины
+    bidirectional: "boolean"
