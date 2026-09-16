@@ -1,0 +1,31 @@
+{
+    "autoSaveInterval": 5,
+    "autoBackupAfterFileChange": false,
+    "autoPullInterval": 5,
+    "autoPullOnBoot": true,
+    "autoCommitMessage": "Vault sync: {{date}}",
+    "commitMessage": "vault backup: {{date}}",
+    "pullBeforePush": true,
+    "pushOnBackup": true,
+    "showStatusBar": true,
+    "updateSubmodules": false,
+    "syncMethod": "merge",
+    "customMessageOnAutoBackup": false,
+    "checkStatusOnStartup": true,
+    "currentBranch": "",
+    "remote": "origin",
+    "diffView": "split",
+    "enablePathIgnoring": true,
+    "ignoredPaths": [
+        "_scripts/lib/**",
+        "_scripts/_pipsrc/**",
+        "_scripts/_pycache/**",
+        "raw/**"
+    ],
+    "forcePushForBackup": false,
+    "gitDiff": true,
+    "gitLanguage": "en",
+    "stageAllChanges": true,
+    "autoRefresh": true,
+    "showAbout": false
+}

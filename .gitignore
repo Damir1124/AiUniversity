@@ -3,9 +3,13 @@
 .DS_Store
 Thumbs.db
 
-# Vault / Obsidian (локальные настройки не коммитим)
-.obsidian/
-.obsidian/** 
+# Vault / Obsidian настроек не коммитим, КРОМЕ установленных community-плагинов
+# (чтобы при клонировании на телефон плагин был сразу доступен)
+.obsidian/*
+!.obsidian/plugins/
+.obsidian/plugins/*
+!.obsidian/plugins/obsidian-git/
+!.obsidian/plugins/obsidian-git/*
 
 # Источники/большие файлы — по желанию исключить
 # raw/binaries/**
