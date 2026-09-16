@@ -21,3 +21,10 @@ raw/*.PDF
 raw/*.pdf
 raw/**/*.pdf
 raw/**/*.PDF
+
+# Python-конвертер: временные файлы и библиотеки не коммитим.
+# Библиотеки восстанавливаются скриптом _scripts/install_lib.py (см. _scripts/README.md)
+_scripts/lib/
+_scripts/_pipsrc/
+_scripts/_pycache/
+__pycache__/
